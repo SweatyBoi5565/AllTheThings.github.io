@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital@0;1&display=swap");
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav1 nav2"
+    "nav3 nav4"
+    "nav5 nav6"
+    "footer footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto 1fr;
+  min-height: 200vh;
+  margin: 0;
+  background-color: #0e0a11;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #2c2c2c;
+}
+::-webkit-scrollbar-thumb {
+  background: #535353;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(156, 156, 156);
+}
+
+@media screen and (max-width: 1090px) {
+  .fancy1 {
+    width: 55%;
+    text-align: center;
+  }
+  .subheader {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav1"
+      "nav2"
+      "nav3"
+      "nav4"
+      "nav5"
+      "nav6"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+  }
+  .fancy1 {
+    font-size: 3rem;
+  }
+  .subheader {
+    font-size: 10pt;
+  }
+}
+
+.fancy1 {
+  color: rgb(0, 74, 173);
+  background-image: linear-gradient(40deg, #0e0a11, #0a0a33);
+  padding-inline: 1%;
+  padding-block: 0.5%;
+  border-radius: 30px;
+  font-size: 133px;
+  text-decoration: none;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  animation: pulse 3s infinite alternate;
+}
+@keyframes pulse {
+  from {
+    box-shadow: -5px 5px 100px rgba(0, 44, 139, 0.493),
+      0 0 5px rgba(0, 40, 173, 0.5);
+  }
+  to {
+    box-shadow: 10px -5px 50px rgba(18, 63, 212, 0.493),
+      0 0 10px rgb(16, 77, 209);
+  }
+}
+
+.subheader {
+  color: rgb(255, 255, 255);
+  font-size: 27px;
+  text-decoration: none;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  background-color: #00000000;
+  text-shadow: #0e0e0e 5px 5px 10px;
+}
+
+.fancy-subheader {
+  color: rgb(255, 255, 255);
+  font-size: 20pt;
+  text-decoration: none;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  background-color: #00000000;
+  text-shadow: #858585 5px 5px 10px;
+}
+
+header {
+  background-image: linear-gradient(200deg, #0e0a11, #2b2b5e);
+  grid-area: header;
+  border: 1px solid rgb(34, 33, 71);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+nav1,
+nav2,
+nav3,
+nav4,
+nav5,
+nav6,
+nav {
+  position: relative;
+  text-align: center;
+  border: 1px solid #0e0a11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 420px;
+  overflow: hidden;
+  text-shadow: 3px 3px 5px black;
+}
+
+nav1 img,
+nav2 img,
+nav3 img,
+nav4 img,
+nav5 img,
+nav6 img,
+nav img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease, filter 0.4s ease;
+}
+
+nav1 img:hover,
+nav2 img:hover,
+nav3 img:hover,
+nav4 img:hover,
+nav5 img:hover,
+nav6 img:hover,
+nav img:hover {
+  transform: scale(1.1);
+  filter: blur(5px);
+  cursor: pointer;
+}
+
+nav1 .hover-text,
+nav2 .hover-text,
+nav3 .hover-text,
+nav4 .hover-text,
+nav5 .hover-text,
+nav6 .hover-text,
+nav .hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 44px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  font-family: "Montserrat", sans-serif;
+  user-select: none;
+  pointer-events: none;
+}
+
+nav1:hover .hover-text,
+nav2:hover .hover-text,
+nav3:hover .hover-text,
+nav4:hover .hover-text,
+nav5:hover .hover-text,
+nav6:hover .hover-text,
+nav:hover .hover-text {
+  opacity: 1;
+}
+
+nav1 {
+  grid-area: nav1;
+}
+
+nav2 {
+  grid-area: nav2;
+}
+
+nav3 {
+  grid-area: nav3;
+}
+
+nav4 {
+  grid-area: nav4;
+}
+
+nav5 {
+  grid-area: nav5;
+}
+
+nav6 {
+  grid-area: nav6;
+}
+
+footer {
+  background-image: linear-gradient(200deg, #0e0a11, #2b2b5e);
+  border: 1px solid #000000;
+  color: rgb(0, 74, 173);
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
