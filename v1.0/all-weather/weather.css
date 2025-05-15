@@ -1,0 +1,206 @@
+body {
+  font-family: "Montserrat";
+  background: #181a1b;
+  color: #f1f1f1;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #23243a;
+  background-image: linear-gradient(30deg, #0e0a11, #2b2b5e);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.dark-mode {
+  background: #d8d8d8;
+  background-image: linear-gradient(30deg, #616074, #403ea7);
+}
+
+h1 {
+  margin-bottom: none;
+  font-size: 2em;
+  color: #ffffff;
+  font-family: "Montserrat";
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.596);
+}
+
+.navbar {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0.1fr 9fr 1fr;
+  background-color: #0a0b12;
+  text-align: center;
+}
+
+.dark-mode .navbar {
+  background-image: linear-gradient(30deg, #7a7a7a, #2b2b5e);
+  border-bottom: #ffffff 1px solid;
+}
+
+.navbar a {
+  margin: 20px 20px 30px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 70vh;
+  padding: 2rem 0;
+}
+
+.weather-card {
+  background: #23272a;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  padding: 2rem 2.5rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.weather-card h2 {
+  margin-top: 0;
+  color: #ffd700;
+  letter-spacing: 1px;
+}
+
+.weather-info {
+  margin: 1.5rem 0;
+}
+
+.weather-temp {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffb347;
+  margin-bottom: 0.5rem;
+}
+
+.temp-label {
+  display: block;
+  font-size: 1.1rem;
+  color: #b3c6ff;
+  margin-top: 0.2rem;
+}
+
+.weather-stats {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  text-align: left;
+}
+
+.weather-stats li {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+
+.weather-description {
+  margin-top: 1.5rem;
+  color: #b3c6ff;
+  font-size: 1.05rem;
+}
+
+footer {
+  background: #23272a;
+  color: #b3c6ff;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.toggle-text {
+  font-family: "Montserrat";
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 30px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 20px;
+  white-space: nowrap;
+  transition: text-shadow 0.2s;
+}
+
+.toggle-text:hover {
+  text-shadow: #ffffff 0px 0px 10px;
+}
+
+.dark-mode .logo {
+  color: #ffffff;
+  background-color: #4442a0;
+  background-image: linear-gradient(var(--gradient-angle), #0e0a11, #20203a);
+  animation: light-pulse 5s infinite alternate;
+  text-shadow: -2px 2px rgba(255, 255, 255, 0.3);
+}
+
+.logo {
+  color: rgb(0, 74, 173);
+  background-color: #0f0f1a;
+  background-image: linear-gradient(var(--gradient-angle), #0e0a11, #20203a);
+
+  font-family: archivo-black, sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+  border-radius: 5%;
+  padding: 0.5%;
+  padding-bottom: 10px;
+  display: inline-block;
+  font-size: x-large;
+  animation: pulse 5s infinite alternate;
+  transform: scale(1);
+  cursor: pointer;
+  transition: transform 0.1s ease-out, background-image 0.3s ease-out;
+  width: 85px;
+  height: 80px;
+  padding-left: 7px;
+  user-select: none;
+  text-align: start;
+}
+.logo:hover {
+  transform: scale(1.05);
+  background-image: linear-gradient(
+    var(--gradient-angle),
+    hsl(0, 0%, 100%),
+    hsl(0, 0%, 100%)
+  );
+  background-blend-mode: overlay;
+}
+.logo:active {
+  transform: scale(0.99);
+  background-image: linear-gradient(
+    var(--gradient-angle),
+    hsl(274, 26%, 30%),
+    hsl(240, 29%, 38%)
+  );
+}
+@keyframes pulse {
+  from {
+    text-shadow: -2px 2px rgba(0, 74, 173, 0.5), -4px 4px rgba(0, 74, 173, 0.3);
+    box-shadow: -5px 5px 10px rgba(0, 44, 139, 0.493),
+      0 0 5px rgba(0, 40, 173, 0.5);
+  }
+  to {
+    text-shadow: -2px 2px rgba(0, 74, 173, 0.2), -4px 4px rgba(0, 74, 173, 0.1);
+    box-shadow: 5px -5px 20px rgba(18, 63, 212, 0.493),
+      0 0 10px rgb(16, 77, 209);
+  }
+}
+
+@keyframes light-pulse {
+  from {
+    box-shadow: -5px 5px 10px rgba(76, 74, 150, 0.493), 0 0 5px rgb(0, 0, 0);
+  }
+  to {
+    box-shadow: 5px -5px 20px rgba(75, 75, 75, 0.493), 0 0 10px rgb(0, 0, 0);
+  }
+}

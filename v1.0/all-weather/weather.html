@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moon Weather</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <nav class="navbar">
+      <a href="/index.html">
+        <div class="logo">
+          All
+          <br />
+          The
+          <br />
+          Things.
+        </div>
+      </a>
+      <h1>All-Weather <br> Stay Updated on the Moons weather</h1>
+      <div class="toggle-switch">
+        <label>
+          <button onclick="darkModeFunction()" class="toggle-text">
+            Dark Mode
+          </button>
+        </label>
+      </div>
+    </nav>
+    <main>
+        <section class="weather-card">
+            <h2>Current Conditions</h2>
+            <div class="weather-info">
+                <div class="weather-temp">
+                    <span class="temp-value">~250°F</span>
+                    <span class="temp-label">On The Sunny Side Specifically</span>
+                </div>
+                <ul class="weather-stats">
+                    <li><strong>Atmosphere:</strong> None</li>
+                    <li><strong>Wind:</strong> None</li>
+                    <li><strong>Humidity:</strong> 0%</li>
+                    <li><strong>Gravity:</strong> 1.62 m/s²</li>
+                    <li><strong>Day Length:</strong> 29.5 Earth days</li>
+                </ul>
+            </div>
+            <div class="weather-description">
+                <p>
+                    The Moon's sunny side reaches extreme temperatures of up to <strong>250°F (121°C)</strong>. 
+                    With no atmosphere, there is no wind or humidity. Tonight will be  extremely cold, dropping to -208°F (-133°C).
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer><h4>&copy; Copyright 2025 All-Industries.Inc</h4></footer>
+    <script src="/dark-mode.js"></script>
+</body>
+</html>

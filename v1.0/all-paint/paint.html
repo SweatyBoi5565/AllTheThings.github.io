@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AllTheThings/All-Paint</title>
+    <link rel="stylesheet" href="paint-styles.css" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="navbar">
+        <a href="/index.html">
+              <div class="logo">
+                All
+                <br />
+                The
+                <br />
+                Things.
+              </div>
+            </a>
+        <div class="controls">
+          <div>
+            <div class="color-title">Color</div>
+            <input type="color" id="color" />
+          </div>
+          <div>
+            <div>Size</div>
+            <input type="number" min="1" max="100" value="10" id="radius" />
+          </div>
+          <div class="btn" onclick="erase()">Erase</div>
+          <div class="btn" onclick="eraseWhole()">Delete</div>
+          <div class="btn" onclick="saveCanvas()">Save</div>
+          <input
+            type="file"
+            id="import-image"
+            accept="image/*"
+            style="display: none"
+            onchange="importImage(event)"
+          />
+          <div
+            class="btn"
+            onclick="document.getElementById('import-image').click()"
+          >
+            Import
+          </div>
+        </div>
+        <div class="toggle-switch">
+        <label>
+          <button onclick="darkModeFunction()" class="toggle-text">
+            Dark Mode
+          </button>
+        </label>
+      </div>
+      </div>
+      <div class="project">
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+  </body>
+
+  <script src="paint-script.js"></script>
+  <script src="/dark-mode.js"></script>
+</html>

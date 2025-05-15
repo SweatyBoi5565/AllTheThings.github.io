@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project Alpha v0.2.0</title>
+    <link rel="stylesheet" href="search-styles.css" />
+    <script defer src="search.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,800;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="https://mail.google.com" class="link">Gmail</a>
+          </li>
+          <li>
+            <a href="/all-image/image.html" class="link">All-Image</a>
+          </li>
+          <!-- Labs Icon SVG -->
+          <li>
+            <div class="circle-shadow">
+            <a href="https://labs.google.com/search?source=hp">
+            <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#ffffff"><path d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Zm80-120h400L544-400H416L280-240Zm-80 40h560L520-492v-268h-80v268L200-200Zm280-280Z"/></svg>
+            </div>
+          </li>
+          <!-- Apps Icon SVG -->
+          <li>
+            <div class="circle-shadow">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+            height="28px" viewBox="0 -960 960 960" 
+            width="28px" fill="#ffffff"> <path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"/></svg>
+            </div>
+          </li>
+          <!-- User Icon SVG -->
+          <li>
+            <a href="https://myaccount.google.com/?hl=en&authuser=0&utm_source=OGB&utm_medium=act&gar=WzJd&sl=true">
+            <div class="circle-shadow">
+            <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#ffffff"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
+            </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="content-section">
+      <div class="content-wrapper">
+        <img src="/images/All-Search.png" alt="All-Search logo" class="logo-img">
+        <div class="search-bar">
+          <svg class="search-icon" height="24px" viewBox="0 -960 960 960" width="24px" fill="#9aa0a6"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+          <input id="search-input" class="search-input" type="text" />
+          <svg class="search-bar-buttons" height="24px" viewBox="0 -960 960 960" width="24px" fill="#9aa0a6"><path d="M160-200q-33 0-56.5-23.5T80-280v-400q0-33 23.5-56.5T160-760h640q33 0 56.5 23.5T880-680v400q0 33-23.5 56.5T800-200H160Zm0-80h640v-400H160v400Zm160-40h320v-80H320v80ZM200-440h80v-80h-80v80Zm120 0h80v-80h-80v80Zm120 0h80v-80h-80v80Zm120 0h80v-80h-80v80Zm120 0h80v-80h-80v80ZM200-560h80v-80h-80v80Zm120 0h80v-80h-80v80Zm120 0h80v-80h-80v80Zm120 0h80v-80h-80v80Zm120 0h80v-80h-80v80ZM160-280v-400 400Z"/></svg>
+          <svg class="search-bar-buttons" height="24px" viewBox="0 -960 960 960" width="24px" fill="#9aa0a6"><path d="M480-400q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm0-240Zm-40 520v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h80q0 105-68 184t-172 93v123h-80Zm40-360q17 0 28.5-11.5T520-520v-240q0-17-11.5-28.5T480-800q-17 0-28.5 11.5T440-760v240q0 17 11.5 28.5T480-480Z"/></svg>
+        </div>
+        <div class="srch-btns">
+            <button class="all-srch-btn">All-Search</button>
+            <button class="lucky-srch-btn">I'm Feeling Lucky</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <ul class="left-footer">
+          <li>
+            <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+          </li>
+          <li>
+            <a href="https://www.google.co.uk/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+          </li>
+          <li>
+            <a href="https://www.google.co.uk/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+          </li>
+        </ul>
+        <ul class="right-footer">
+          <li>
+            <a href="https://www.google.com/intl/en_us/policies/privacy/?fg=1">Privacy</a>
+          </li>
+          <li>
+            <a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
+          </li>
+          <li>
+            <a href="https://www.google.co.uk/preferences?hl=en&fg=1">Settings</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>

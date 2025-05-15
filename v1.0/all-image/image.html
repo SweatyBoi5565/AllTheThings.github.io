@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AllTheThings/All-Image</title>
+    <script defer src="image.js"></script>
+    <link rel="stylesheet" href="image-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,800;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="/index.html">
+              <div class="logo">
+                All
+                <br />
+                The
+                <br />
+                Things.
+              </div>
+            </a>
+          </li>
+          <li class="all-image-logo">All-Image</li>
+          <li>
+            <button data-settings-target="#settings" class="settings-button">
+              Settings
+            </button>
+            <div class="settings" id="settings">
+              <div class="settings-header">
+                <div class="settings-header-title">All-Image Settings</div>
+                <button data-close-button class="settings-close">
+                  &times;
+                </button>
+              </div>
+              <div class="settings-content">
+                <br>
+                <div class="brightness-container">
+                  <img src="/icons/sun.svg" alt="sun" />
+                  <input
+                    type="range"
+                    id="brightness-slider"
+                    min="20"
+                    max="100"
+                    value="100"
+                  />
+                </div>
+                <br>
+                <div>
+                    <div class="toggle-switch">
+                    <label>
+                      <span class="toggle-text">Dark Mode</span>
+                    </label>
+
+                    <input type="checkbox" checked id="darkModeToggle" class="toggle-input" onchange="darkModeFunction()">
+                    </div></div>
+                    <br>
+                    <button onclick="refreshPage()" class="refresh_button">New Photos</button>
+                    <br>
+                </div>
+              </div>
+            </div>
+            <div id="overlay"></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="scroller1" id="images-container1">
+      <ul class="images scroller-inner-left">
+        <li><img src="https://picsum.photos/300/380?random=1" /></li>
+        <li><img src="https://picsum.photos/300/380?random=2" /></li>
+        <li><img src="https://picsum.photos/300/380?random=3" /></li>
+        <li><img src="https://picsum.photos/300/380?random=4" /></li>
+        <li><img src="https://picsum.photos/300/380?random=5" /></li>
+        <li><img src="https://picsum.photos/300/380?random=1" /></li>
+        <li><img src="https://picsum.photos/300/380?random=2" /></li>
+        <li><img src="https://picsum.photos/300/380?random=3" /></li>
+        <li><img src="https://picsum.photos/300/380?random=4" /></li>
+        <li><img src="https://picsum.photos/300/380?random=5" /></li>
+      </ul>
+    </div>
+    <div class="scroller2" id="images-container2">
+      <ul class="images scroller-inner-left">
+        <li><img src="https://picsum.photos/300/380?random=6" /></li>
+        <li><img src="https://picsum.photos/300/380?random=7" /></li>
+        <li><img src="https://picsum.photos/300/380?random=8" /></li>
+        <li><img src="https://picsum.photos/300/380?random=9" /></li>
+        <li><img src="https://picsum.photos/300/380?random=10" /></li>
+        <li><img src="https://picsum.photos/300/380?random=6" /></li>
+        <li><img src="https://picsum.photos/300/380?random=7" /></li>
+        <li><img src="https://picsum.photos/300/380?random=8" /></li>
+        <li><img src="https://picsum.photos/300/380?random=9" /></li>
+        <li><img src="https://picsum.photos/300/380?random=10" /></li>
+      </ul>
+    </div>
+    <div class="scroller3" id="images-container3">
+      <ul class="images scroller-inner-left">
+        <li><img src="https://picsum.photos/300/380?random=11" /></li>
+        <li><img src="https://picsum.photos/300/380?random=12" /></li>
+        <li><img src="https://picsum.photos/300/380?random=13" /></li>
+        <li><img src="https://picsum.photos/300/380?random=14" /></li>
+        <li><img src="https://picsum.photos/300/380?random=15" /></li>
+        <li><img src="https://picsum.photos/300/380?random=11" /></li>
+        <li><img src="https://picsum.photos/300/380?random=12" /></li>
+        <li><img src="https://picsum.photos/300/380?random=13" /></li>
+        <li><img src="https://picsum.photos/300/380?random=14" /></li>
+        <li><img src="https://picsum.photos/300/380?random=15" /></li>
+      </ul>
+    </div>
+    <footer>
+      &copy Copyright AllTheThings Incorperated 2025 - All Rights Reserved
+    </footer>
+    <script src="/dark-mode.js"></script>
+  </body>
+</html>
